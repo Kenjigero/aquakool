@@ -1,0 +1,87 @@
+.navbar {
+    min-height: 80px; /* Adjust the height as needed */
+    background-color:rgb(19, 37, 152); /* Background color */
+}
+
+#navbar-brand{
+    font-family: font-family 'Skranji', cursive;
+    font-weight: 700;
+    
+}
+
+
+.navbar-brand{
+    font-family: 'Skranji', cursive;
+    font-weight: 700;
+}
+/* Center the content vertically within the navbar */
+.navbar-brand,
+.navbar-nav {
+    line-height: 80px; /* Should match the navbar height */
+}
+.navbar-nav .nav-link {
+    color: brown; /* Brown text color for nav-links */
+    padding: 10px 10px; /* Adjust padding as needed */
+    border-radius: 5px; /* Add rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: brown; /* Background color on hover */
+    color: blue; /* Text color on hover */
+}
+
+.product-design {
+    background-color: #531d1d; /* Set the background color for each product design */
+    border: 1px solid #ddd; /* Add a border for separation */
+    padding: 20px; /* Add padding for spacing */
+    margin-bottom: 20px; /* Add margin for spacing between designs */
+}
+
+.image-container{
+    background-color: #1c4976; /* Set the background color for each product design */
+    border: 1px solid #ddd; /* Add a border for separation */
+    padding: 20px; /* Add padding for spacing */
+    margin-bottom: 20px; /* Add margin for spacing between designs */
+    display: flex; /* Use flexbox to align content horizontally */
+    justify-content: space-between; /* Space content evenly horizontally */
+    align-items: center; /* Center content vertically */
+    transition: background-color 0.3s; /* Add a smooth transition for background color */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.image-container:hover {
+    background-color: #e9ecef; /* Change background color on hover */
+}
+.contact {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+
+  a:hover {
+    color: #0056b3;
+  }

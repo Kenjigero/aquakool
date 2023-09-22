@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Bootstrap Navbar</title>
+
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Skranji:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" >
+    <style>
+        body{
+          background-color: grey;
+        }
+        .navbar-brand {
+            font-family: 'Skranji', cursive; /* Use the custom font */
+            font-weight: bold; /* Make the text bold */
+        }
+        .navbar-brand img {
+            max-height: 100px; /* Adjust the max height of the logo */
+            margin-left: 500px; /* Add some spacing between the logo and text */
+        }
+        .image-container {
+            text-align: center;
+        }
+
+        .rotating-image {
+            max-width: 100%;
+            transition: transform 3s; /* Add a transition for smooth rotation */
+        }
+
+        /* CSS for hover effect */
+        .rotating-image:hover {
+            transform: rotate(360deg); /* Rotate the image 360 degrees on hover */
+        }
+    </style>
+</head>
+<body>
+<section id="nav">
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">
+        AQUA COOL
+    </a>
+    <div class="nav"></div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#product">Product</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#mission">Mission</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#sizes">Sizes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+</section>
+<div class="container mt-5" id="product">
+  <div class="row">
+    <div class="col-md-6 offset-md-3 text-center">
+      <h2 style="color: #FFA500; font-size: 24px; font-weight: bold;">About Our Product</h2>
+      <p style="color: blanchedalmond; font-size: 16px; line-height: 1.5;">
+        In the Philippines, the production and sale of tumblers made from coconut
+        waste is still in its early stages. However, there is a growing interest in environmentally
+        friendly products, which will likely drive demand for the coconut shells and husk tumblers in the coming
+        years.
+      </p>
+      <img src="image/prod.png" alt="Tumbler Image" style="max-width: 50%; height: auto; border: 3px solid #FFA500; box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);">
+      <br>
+      <p style="color: blanchedalmond; font-size: 16px; line-height: 1.5;">
+        Our business is founded on the concept of repurposing coconut waste to create a sustainable
+        and environmentally friendly product. Our tumbler, AQUA KOOL has a handy compartment for keys and paper
+        money, making it an ideal everyday companion.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="product" id="mission">
+  <div class="row align-items-center">
+    <div class="col-md-6">
+      <img src="image/design.png" alt="Tumbler Image" style="max-width: 50%; height: auto;">
+    </div>
+    <div class="col-md-6">
+      <div class="container-content text-center" style="background-color: #011889; padding: 20px;">
+        <h3 style="color: #FFA500; font-size: 24px; font-weight: bold;">MISSION</h3>
+        <p style="color: blanchedalmond; font-size: 16px; line-height: 1.5;">To create environmental-friendy and sustainable tumlbers out of coconut waste reducing the environmental impact
+          of plastic pollution and supporting sustainable coconut farming practices
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="image-container" id="sizes">
+  <h4 style="color: #FFA500; font-size: 24px; font-weight: bold;">AVAILABLE SIZES</h4>
+  <div class="image-item">
+    <img class="rotating-image" src="image/1.png" alt="Image 1">
+    <div class="image-text">
+      <h3 style="color: #FFA500; font-size: 24px; font-weight: bold;">LARGE</h3>
+      <p style="color: blanchedalmond; font-size: 24px; font-weight: bold;">1.5 Liter</p>
+    </div>
+  </div>
+
+  
+  <div class="image-item">
+    <img class="rotating-image" src="image/2.png" alt="Image 2">
+    <div class="image-text">
+      <h3 style="color: #FFA500; font-size: 24px; font-weight: bold;">MEDUIM</h3>
+      <p style="color: blanchedalmond; font-size: 24px; font-weight: bold;">800 ml</p>
+    </div>
+  </div>
+
+  
+  <div class="image-item">
+    <img class="rotating-image" src="image/3.png" alt="Image 3">
+    <div class="image-text">
+      <h3 style="color: #FFA500; font-size: 24px; font-weight: bold;">SMALL</h3>
+      <p style="color: blanchedalmond; font-size: 24px; font-weight: bold;">500 ml</p>
+    </div>
+  </div>
+</div>
+<div class="contact" id="contact">
+  <h3>Contact Us</h3>
+  <ul>
+    <li>
+      <a href="https://www.facebook.com/Aqua-Kool" target="_blank">
+        <i class="fa fa-facebook"></i> Facebook
+      </a>
+    </li>
+    <li>
+      <a href="mailto:aquakool@gmail.com">
+        <i class="fa fa-envelope"></i> Gmail
+      </a>
+    </li>
+    <li>
+      <a href="https://maps.app.goo.gl/4EQF551qnLp7pwsHA" target="_blank">
+        <i class="fa fa-map-marker"></i> Location
+      </a>
+    </li>
+    <li>
+      <a href="tel:09156478539">
+        <i class="fa fa-phone"></i> Phone: 0915-647-8539
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+
+
+
+
+</body>
+</html>
+
